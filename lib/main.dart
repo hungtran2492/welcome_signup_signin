@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/Screens/Welcome/welcome_screen.dart';
 import 'package:flutter_auth/constants.dart';
+import 'package:device_preview/device_preview.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(
+      DevicePreview(
+        enabled: true,
+        builder: (context) => MyApp(),
+      ),
+    );
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
